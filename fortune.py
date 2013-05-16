@@ -32,6 +32,6 @@ I didn't want to tell you anyway
 import random
 fortunes = ["You will eat something today", "There is a bug living in your home", "There will be a problem with the subway", "You will sleep tonight", "You will wear pajamas tonight"]
 if raw_input("Would you like to see your fuuuuttttuuuurrreee? > ") in ["Yes", "yes", "y", "yeah", "YEAH", "YES"]:
-	print(fortunes[random.randint(0,5)])
+	print(fortunes[random.randint(0,4)])
 else:
 	print("I didn't want to tell you anyway")

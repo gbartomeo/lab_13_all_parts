@@ -69,7 +69,7 @@ if peeps <= 6:
         print("Couldn't understand " + service + " service; using default 15%")
         tip = tips[2]
     else:
-        tip = float(tips.index(service))
+        tip = float(tips[servs.index(service)])
 else:
     tip = tips[-1]
 print("You should probably tip $" + str(cost*tip) + "!")
