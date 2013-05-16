@@ -65,8 +65,8 @@ tips = [0.0,0.1,0.15,0.2,0.25]
 if peeps <= 6:
     service = raw_input("How was the service (terrible, poor, ok, good, great)? > ")
     servs = ["terrible", "poor", "ok", "good", "great"]
-    if service.lower not in servs:
-        print("Couldn't understand " + " service; using default 15%")
+    if service.lower() not in servs:
+        print("Couldn't understand " + service + " service; using default 15%")
         tip = tips[2]
     else:
         tip = float(tips.index(service))

@@ -47,7 +47,7 @@ Couldn't translate -12 into a letter grade
 grade = raw_input("What grade did you get?\n> ")
 letters = ["F","F","F","F","F","D","C","B","A","A"]
 
-if grade < 0:
+if grade < 0 or grade > 100:
 	print("Couldn't translate " + grade + " into a letter grade")
 else:
 	print("Number grade: " + grade + "\nLetter Grade: " + letters[int(int(grade)/10)])
